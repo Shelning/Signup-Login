@@ -109,7 +109,7 @@ try {
 				$successMessage = "正しく変更されました！";
 				
 
-			   /**ページを遷移する場合の処理(強制ログアウト)
+			       /**ページを遷移する場合の処理(強制ログアウト)
 				*$successMessage = "正しく変更されました！";
 				*$_SESSION = array();
 				*session_destroy();
