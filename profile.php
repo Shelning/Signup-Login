@@ -101,8 +101,8 @@ try {
 				$sql = "update users set password='$new_hashpass' where name='$username'";
 				$result = $pdo->query($sql);
 
-			    //ページを遷移しない場合の処理
-			    //現在のセッションIDを新しく生成したものと置き換える。セキュリティ上重要
+			        //ページを遷移しない場合の処理
+			        //現在のセッションIDを新しく生成したものと置き換える。セキュリティ上重要
 				session_regenerate_id(true);
 				
 				$_SESSION["name"] = $username;
