@@ -18,7 +18,7 @@ if (!empty($_POST["signup"])) { // 登録ボタンが押された場合
     }
 
     if (!empty($_POST["username"]) and !empty($_POST["password"]) and !empty($_POST["password2"]) and $_POST["password"] === $_POST["password2"]) {
-    	// 入力したユーザーネーム、メールアドレス、パスワードを格納
+    	// 入力したユーザーネーム、パスワードを格納
     	$username = $_POST["username"];
     	$password = $_POST["password"];
 
