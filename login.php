@@ -10,7 +10,7 @@ $errorMessage = "";
 
 if (isset($_POST["login"])) { // ログインボタンが押された場合
 	//空欄チェック
-    if (empty($_POST["username"])) {
+        if (empty($_POST["username"])) {
 		$errorMessage = 'ユーザーネームを入力してください';
 	} elseif (empty($_POST["password"])) {
 		$errorMessage = 'パスワードを入力してください';
