@@ -40,8 +40,8 @@ if (!empty($_POST["signup"])) { // 登録ボタンが押された場合
 	   			$sql -> bindValue(':name', $username, PDO::PARAM_STR);
 	   			$sql -> bindValue(':email', $email, PDO::PARAM_STR);
 	   			$sql -> bindValue(':password', $password, PDO::PARAM_STR);
-	       		$sql->execute();
-	       		$signupMessage = '登録が完了しました！。';
+	       		        $sql->execute();
+	       		        $signupMessage = '登録が完了しました！。';
 	   		 }
     	 } catch (PDOException $e) { //データベースに接続できなかったとき
         	$errorMessage = 'データベースエラー';
