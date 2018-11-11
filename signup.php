@@ -36,9 +36,8 @@ if (!empty($_POST["signup"])) { // 登録ボタンが押された場合
 	   		 if ($count > 0) {
 			 	$errorMessage = 'そのユーザー名は既に使用されています';
 	   		 } else {
-	       	         	$sql = $pdo->prepare("INSERT INTO テーブル(name, email, password) VALUES (:name, :email, :password)");
+	       	         	$sql = $pdo->prepare("INSERT INTO テーブル(name, password) VALUES (:name, :password)");
 	   			$sql -> bindValue(':name', $username, PDO::PARAM_STR);
-	   			$sql -> bindValue(':email', $email, PDO::PARAM_STR);
 	   			$sql -> bindValue(':password', $password, PDO::PARAM_STR);
 	       		        $sql->execute();
 	       		        $signupMessage = '登録が完了しました！。';
