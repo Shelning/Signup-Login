@@ -27,10 +27,10 @@ if (!empty($_POST["signup"])) { // 登録ボタンが押された場合
         	 $pdo = new PDO($dsn, $db[user], $db[pass]);
 
 	   		 //ユーザーネームの重複を確認
-	         //$stmt に同じユーザー名をもつレコードの件数を取得
+	                 //$stmt に同じユーザー名をもつレコードの件数を取得
 	   		 $stmt = "SELECT count(*) FROM テーブル WHERE name = '$username'";
 
-	         //fetchColum() で件数を取り出している
+	                 //fetchColum() で件数を取り出している
 	   		 $count = (int)$pdo->query($stmt)->fetchColumn();
 
 	   		 if ($count > 0) {
