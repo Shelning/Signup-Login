@@ -47,7 +47,7 @@ if (!empty($_POST["signup"])) { // 登録ボタンが押された場合
         	// $e->getMessage() でエラー内容を参照可能（デバッグ時のみ表示）
         	// echo $e->getMessage();
     	  }
-	} else if($_POST["password"] != $_POST["password2"]) {
+    } else if($_POST["password"] != $_POST["password2"]) {
 		$errorMessage = 'パスワードが一致しません';
     }
 }
